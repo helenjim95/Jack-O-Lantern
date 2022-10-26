@@ -62,7 +62,6 @@ public class JackOLantern {
        */
         Pumpkin pumpkin = new Pumpkin("type1", 10);
         pumpkin.deseed();
-        pumpkin.setWeight(pumpkin.getWeight());
         Candle candle = new Candle(5, 40);
         candle.light();
         Ghost ghost = new Ghost("scary", 25);

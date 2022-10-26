@@ -20,11 +20,7 @@ public class Pumpkin {
     }
 
     public void setWeight(double weight) {
-        if (isSeeds()) {
-            this.weight = weight;
-        } else {
-            this.weight = weight * 0.3;
-        }
+        this.weight = weight;
     }
 
     public String getFace() {
@@ -57,6 +53,7 @@ public class Pumpkin {
 
     public void deseed() {
         this.seeds = false;
+        this.weight = getWeight() * 0.3;
     }
 
     public void carveFace(String temper) {
