@@ -68,5 +68,6 @@ public class JackOLantern {
         JackOLantern jackOLantern = new JackOLantern("Jack", pumpkin, candle, ghost);
         pumpkin.carveFace(ghost.getTemper());
         jackOLantern.getLanternWeight();
+
     }
 }
