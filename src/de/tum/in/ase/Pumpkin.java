@@ -1,5 +1,7 @@
 package de.tum.in.ase;
 
+import static java.security.SecureRandom.getSeed;
+
 public class Pumpkin {
         private double weight;
         private String face;
@@ -18,7 +20,11 @@ public class Pumpkin {
     }
 
     public void setWeight(double weight) {
-        this.weight = weight;
+        if (isSeeds()) {
+            this.weight = weight;
+        } else {
+            this.weight = weight * 0.3;
+        }
     }
 
     public String getFace() {
@@ -56,6 +62,5 @@ public class Pumpkin {
     public void carveFace(String temper) {
         this.face = temper;
     }
-
 
 }
