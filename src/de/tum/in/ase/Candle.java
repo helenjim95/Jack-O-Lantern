@@ -44,7 +44,7 @@ public class Candle {
     }
 
     public double calculateWeight() {
-        return this.radius * this.radius * this.height * 3.14 * 0.95;
+        return getRadius() * getRadius() * getHeight() * 3.14 * 0.95;
     }
 
 }
