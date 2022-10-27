@@ -3,16 +3,16 @@ package de.tum.in.ase;
 public class JackOLantern {
     //TODO construct correct attributes
     private String name;
-//    Pumpkin pumpkin;
-//    Candle candle;
-//    Ghost ghost;
+    Pumpkin pumpkin;
+    Candle candle;
+    Ghost ghost;
 
     //TODO write constructor with parameters
     public JackOLantern(String name, Pumpkin pumpkin, Candle candle, Ghost ghost) {
         this.name = name;
-//        this.pumpkin = pumpkin;
-//        this.candle = candle;
-//        this.ghost = ghost;
+        this.pumpkin = pumpkin;
+        this.candle = candle;
+        this.ghost = ghost;
     }
 
     public String getName() {
@@ -23,29 +23,29 @@ public class JackOLantern {
         this.name = name;
     }
 
-//    public Pumpkin getPumpkin() {
-//        return pumpkin;
-//    }
-//
-//    public void setPumpkin(Pumpkin pumpkin) {
-//        this.pumpkin = pumpkin;
-//    }
-//
-//    public Candle getCandle() {
-//        return candle;
-//    }
-//
-//    public void setCandle(Candle candle) {
-//        this.candle = candle;
-//    }
-//
-//    public Ghost getGhost() {
-//        return ghost;
-//    }
-//
-//    public void setGhost(Ghost ghost) {
-//        this.ghost = ghost;
-//    }
+    public Pumpkin getPumpkin() {
+        return pumpkin;
+    }
+
+    public void setPumpkin(Pumpkin pumpkin) {
+        this.pumpkin = pumpkin;
+    }
+
+    public Candle getCandle() {
+        return candle;
+    }
+
+    public void setCandle(Candle candle) {
+        this.candle = candle;
+    }
+
+    public Ghost getGhost() {
+        return ghost;
+    }
+
+    public void setGhost(Ghost ghost) {
+        this.ghost = ghost;
+    }
 
     public JackOLantern jackOLantern(String name, Pumpkin pumpkin, Candle candle, Ghost ghost) {
         pumpkin.deseed();
@@ -54,10 +54,10 @@ public class JackOLantern {
         return new JackOLantern(name, pumpkin, candle, ghost);
     }
 
-//    public double getLanternWeight() {
-//        //TODO calculate the total weight of your Jack O'Lantern
-//        return this.pumpkin.getWeight() * 0.3 + this.candle.calculateWeight();
-//    }
+    public double getLanternWeight() {
+        //TODO calculate the total weight of your Jack O'Lantern
+        return this.pumpkin.getWeight() * 0.3 + this.candle.calculateWeight();
+    }
 
     public static void main(String[] args) {
        /*
@@ -73,7 +73,7 @@ public class JackOLantern {
         Candle candle = new Candle(candle_radius, candle_height);
         Ghost ghost = new Ghost("scary", ghost_age);
         JackOLantern jackOLantern = new JackOLantern("Jack", pumpkin, candle, ghost);
-//        jackOLantern.getLanternWeight();
+        jackOLantern.getLanternWeight();
         double lantern_weight = pumpkin_weight_deseed + candle_weight;
 //        System.out.printf("expected pumpkin weight: %d, pumpkin deseed weight: %.2f, actual pumpkin weight: %.2f%n", pumpkin_weight, pumpkin_weight_deseed, pumpkin.getWeight());
 //        System.out.printf("expected candle radius: %.2f, actual candle radius: %.2f%n", candle_radius, candle.getRadius());
