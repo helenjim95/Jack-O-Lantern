@@ -35,8 +35,8 @@ public class Candle {
         this.burning = burning;
     }
 
-    public Candle Candle(double radius, double height) {
-        return Candle(radius, height);
+    public Candle candle(double radius, double height) {
+        return new Candle(radius, height);
     }
 
     public void light() {
@@ -44,7 +44,9 @@ public class Candle {
     }
 
     public double calculateWeight() {
-        return getRadius() * getRadius() * getHeight() * 3.14 * 0.95;
+        double PI = 3.14;
+        double WAX_DENSITY = 0.95;
+        return PI * this.radius * this.radius * this.height * WAX_DENSITY;
     }
 
 }

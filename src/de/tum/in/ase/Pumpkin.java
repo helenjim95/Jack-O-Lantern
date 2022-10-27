@@ -1,7 +1,5 @@
 package de.tum.in.ase;
 
-import static java.security.SecureRandom.getSeed;
-
 public class Pumpkin {
         private double weight;
         private String face;
@@ -47,13 +45,13 @@ public class Pumpkin {
         this.seeds = seeds;
     }
 
-    public Pumpkin Pumpkin(String type, double weight) {
-        return Pumpkin(type, weight);
+    public Pumpkin pumpkin(String type, double weight) {
+        return new Pumpkin(type, weight);
     }
 
     public void deseed() {
         this.seeds = false;
-        this.weight = getWeight() * 0.3;
+        this.weight = this.weight * 0.3;
     }
 
     public void carveFace(String temper) {
