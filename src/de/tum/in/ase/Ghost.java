@@ -25,8 +25,8 @@ public class Ghost {
         this.age = age;
     }
 
-    public Ghost Ghost(String temper, int age) {
-        return Ghost(temper, age);
+    public Ghost ghost(String temper, int age) {
+        return new Ghost(temper, age);
     }
 
 }
