@@ -56,7 +56,7 @@ public class JackOLantern {
 
     public double getLanternWeight() {
         //TODO calculate the total weight of your Jack O'Lantern
-        return this.pumpkin.getWeight() * 0.3 + this.candle.calculateWeight();
+        return this.pumpkin.getWeight() + this.candle.calculateWeight();
     }
 
     public static void main(String[] args) {
