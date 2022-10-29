@@ -9,6 +9,9 @@ public class JackOLantern {
 
     //TODO write constructor with parameters
     public JackOLantern(String name, Pumpkin pumpkin, Candle candle, Ghost ghost) {
+        pumpkin.deseed();
+        candle.light();
+        pumpkin.carveFace(ghost.getTemper());
         this.name = name;
         this.pumpkin = pumpkin;
         this.candle = candle;
@@ -46,17 +49,9 @@ public class JackOLantern {
     public void setGhost(Ghost ghost) {
         this.ghost = ghost;
     }
-
-    public JackOLantern jackOLantern(String name, Pumpkin pumpkin, Candle candle, Ghost ghost) {
-        pumpkin.deseed();
-        candle.light();
-        pumpkin.carveFace(ghost.getTemper());
-        return new JackOLantern(name, pumpkin, candle, ghost);
-    }
-
     public double getLanternWeight() {
         //TODO calculate the total weight of your Jack O'Lantern
-        return this.pumpkin.getWeight() * 0.3 + this.candle.calculateWeight();
+        return this.pumpkin.getWeight() + this.candle.calculateWeight();
     }
 
     public static void main(String[] args) {
